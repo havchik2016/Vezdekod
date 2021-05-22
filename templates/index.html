@@ -2,7 +2,7 @@
 
 {% block content %}
 {% if current_user.is_authenticated %}
-<h1 style="text-align: center;">Добро пожаловать, {{ current_user.surname }}!</h1>
+<h1 style="text-align: center;">Добро пожаловать, {{ current_user.surname }} {{ current_user.name }}!</h1>
 {% else %}
 <h2 style="text-align:center;">Добро пожаловать на сервис Сбербанка!<br>
     <a href="/register">Зарегистрируйтесь</a> или <a href="/login">войдите</a>, чтобы им воспользоваться.</h2>
